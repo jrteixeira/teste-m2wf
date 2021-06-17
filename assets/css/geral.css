@@ -1,0 +1,12 @@
+.ui.container{
+    margin-top: 1rem;
+}
+.green{
+    color: rgb(49 170 33);
+}
+.red{
+    color: rgb(213 15 15);
+}
+.d-none{
+    display: none !important;
+}

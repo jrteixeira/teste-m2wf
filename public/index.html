@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+    <style>
+        .d-none{
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="../assets/css/geral.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="ui container">
+        <h2 class="ui divid ing header">Exercicios</h2>
+
+        <div class="ui top attached tabular menu">
+            <a class="item active" data-tab="1">Exercicio 1</a>
+            <a class="item" data-tab="2">Exercicio 2</a>
+            <a class="item" data-tab="3">Exercicio 3</a>
+            <a class="item" data-tab="4">Exercicio 4</a>
+            <a class="item" data-tab="5">Exercicio 5</a>
+          </div>
+          <div class="ui bottom attached tab segment active" data-tab="1">
+            <div id="tabContentEx1"></div>
+              
+            <div id="modalInfoContentEx1"></div>
+          </div>
+          <div class="ui bottom attached tab segment" data-tab="2">
+            <div id="tabContentEx2"></div>
+          </div>
+          <div class="ui bottom attached tab segment" data-tab="3">
+            <div id="tabContentEx3"></div>
+          </div>
+          <div class="ui bottom attached tab segment" data-tab="4">
+            <div id="tabContentEx4"></div>
+          </div>
+          <div class="ui bottom attached tab segment" data-tab="5">
+            <div id="tabContentEx5"></div>
+          </div>
+    </div>
+    <script>
+        $('.menu .item')
+        .tab()
+        ;
+        $('.circular.info.icon.link')
+        .popup()
+        ;
+    </script>
+    <script> 
+    $(function(){
+        $("#modalInfoContentEx1").load("/views/modal.html"); 
+        $("#tabContentEx1").load("/views/tab_ex_1.html");
+        $("#tabContentEx2").load("/views/tab_ex_2.html");
+        $("#tabContentEx3").load("/views/tab_ex_3.html");
+        $("#tabContentEx4").load("/views/tab_ex_4.html");
+        $("#tabContentEx5").load("/views/tab_ex_5.html");
+    });
+    </script> 
+</body>
+
+
+</html>

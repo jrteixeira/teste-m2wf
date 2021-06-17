@@ -1,0 +1,48 @@
+<div class="ui grid container">
+    <div class="sixteen wide sixteen wide table sixteen wide computer column">
+        <i class="circular info icon link" style="float: right;" data-content="Sobre o exercicio" data-variation="inverted"></i>
+        <div class="ui left icon input">
+            <input id="ex1_nome" type="text" placeholder="Digite seu nome">
+            <i class="user icon"></i>
+        </div>
+    </div>
+    <div class="sixteen wide sixteen wide table sixteen wide computer column">
+      <div class="ui left icon input">
+          <input id="ex1_idade" type="number" min="0" placeholder="Digite sua idade">
+          <i class="birthday cake icon"></i>
+          <p id="error_ex1" class="d-none" style="position: absolute;top: 40px;color: red;">idade inválida</p>
+      </div>
+  </div>
+  <div class="sixteen wide eight wide table eight wide computer column">
+      <button id="ex1_btn" class="ui positive basic button">Calcular</button>
+  </div>
+  <div class="sixteen wide computer column">
+      <div class="ui indicating progress" id="example3">
+          <div class="bar">
+              <div class="progress"></div>
+          </div>
+          <div class="label">Campos preenchidos</div>
+      </div>
+  </div>
+</div>
+<!-- Modal ex1 -->
+<div class="ui basic modal ex1">
+    <div class="ui icon header">
+      <i class="archive icon"></i>
+    </div>
+    <div class="content">
+      <p style="text-align: center;font-size: x-large;"></p>
+    </div>
+    <div class="actions">
+      <div class="ui red basic cancel inverted button">
+        <i class="thumbs down outline icon"></i>
+        Não gostei
+      </div>
+      <div class="ui green ok inverted button">
+        <i class="thumbs up outline icon"></i>
+        Gostei
+      </div>
+    </div>
+  </div>
+<script src="../assets/js/iteracoes_ex_1.js"></script>
+<script type="module" src="../assets/js/script_ex_1.js"></script>

@@ -1,0 +1,27 @@
+<div class="ui basic modal ex_sobre">
+    <div class="ui icon header">
+      <i class="archive icon"></i>
+      Proposta do exercicio
+    </div>
+    <div class="content">
+      <p></p>
+    </div>
+    <div class="actions">
+      <!-- <div class="ui red basic cancel inverted button">
+        <i class="thumbs down outline icon"></i>
+        Não gostei
+      </div> -->
+      <div class="ui green ok inverted button">
+        <i class="thumbs up outline icon"></i>
+        Entendi
+      </div>
+    </div>
+  </div>
+  <script>
+    function abreModal(msg){
+      $('.ui.basic.modal.ex_sobre p')[0].innerText = msg; 
+      $('.ui.basic.modal.ex_sobre')
+      .modal('show')
+      ;
+      }
+  </script>
